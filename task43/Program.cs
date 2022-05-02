@@ -11,11 +11,6 @@ for (int i = 0; i < variables.GetLength(0); i++)
         variables[i, j] = Convert.ToInt32(Console.ReadLine());
     }
 }
-int b1 = variables[0, 0];
-int k1 = variables[0, 1];
-int b2 = variables[1, 0];
-int k2 = variables[1, 1];
-Console.WriteLine($"vvvv = {variables[1, 0] * variables[0, 1] - variables[0, 0] * variables[1, 1]}  nnnn {variables[0, 1] - variables[1, 1]}");
 double x = (double) (variables[1, 0] - variables[0, 0]) / (variables[0, 1] - variables[1, 1]);
 double y = (double) (variables[1, 0] * variables[0, 1] - variables[0, 0] * variables[1, 1]) / (variables[0, 1] - variables[1, 1]);
 Console.WriteLine($"Точка пересечения прямых ({x}, {y})");
